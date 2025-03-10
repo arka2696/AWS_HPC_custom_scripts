@@ -1,63 +1,63 @@
-Below is the markdown version of the commands and explanations:
+### Creating custom jupyter kernels
 
-markdown
-Copy
+```markdown
 # Managing Jupyter Kernels
 
 This document outlines useful commands for managing Jupyter kernels, including how to check which kernels are installed, remove kernels, and other related commands.
 
 ## Checking Installed Kernels
 
-To see which kernels are installed (including those installed using ipykernel), run:
+To see which kernels are installed (including those installed using `ipykernel`), run:
 
 ```bash
 jupyter kernelspec list
+```
+
 This command lists all available kernels along with their installation paths.
 
-Removing a Kernel
+## Removing a Kernel
+
 To uninstall a specific kernel, use the following command:
 
-bash
-Copy
+```bash
 jupyter kernelspec uninstall <kernel_name>
-For example, to remove the kernel named sam, run:
+```
 
-bash
-Copy
+For example, to remove the kernel named `sam`, run:
+
+```bash
 jupyter kernelspec uninstall sam
-Other Useful Commands
-Installing a New Kernel
+```
+
+## Other Useful Commands
+
+### Installing a New Kernel
+
 To install a new kernel with a custom name and display name, use:
 
-bash
-Copy
+```bash
 python -m ipykernel install --user --name <env_name> --display-name "<display_name>"
-For instance, to install a kernel named sam, run:
+```
 
-bash
-Copy
+For instance, to install a kernel named `sam`, run:
+
+```bash
 python -m ipykernel install --user --name sam --display-name "sam"
-Getting Help for ipykernel Install
+```
+
+### Getting Help for ipykernel Install
+
 For more details or options for installing kernels, check the help documentation:
 
-bash
-Copy
+```bash
 python -m ipykernel install --help
-Viewing Jupyter Configuration Paths
+```
+
+### Viewing Jupyter Configuration Paths
+
 To see where Jupyter looks for configuration files, kernels, etc., run:
 
-bash
-Copy
+```bash
 jupyter --paths
-javascript
-Copy
-
-You can save this text as a `.md` file and use it as a reference for managing your Jupyter notebook environments.
-
-
-
-
-Search
-
-Deep research
-
+```
+```
