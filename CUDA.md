@@ -140,50 +140,6 @@ rm cuda-keyring_1.1-1_all.deb
 * [NVIDIA Documentation](https://docs.nvidia.com/cuda/index.html)
 
 ---
-GitHub no longer allows password-based authentication for Git operations over HTTPS — instead, you must use a **Personal Access Token (PAT)** or **SSH authentication**.
-
-### ✅ Recommended Fix: Use a Personal Access Token (PAT)
-
-1. **Generate a PAT**:
-
-   * Go to: [https://github.com/settings/tokens](https://github.com/settings/tokens)
-   * Click **"Generate new token" → "Classic"**
-   * Select scopes like:
-
-     * `repo` (for private repos)
-   * Set an expiration date
-   * Click **Generate Token** and **copy it** (you won’t see it again!)
-
-2. **Clone using the token**:
-   Replace your password with the token when prompted, or use this format in your terminal (not recommended for sharing/storing):
-
-   ```bash
-   git clone https://<your-username>:<your-token>@github.com/<your-username>/<repo-name>.git
-   ```
-
-   For you, that would be:
-
-   ```bash
-   git clone https://arka2696:<your-token>@github.com/arka2696/stellate-SAM.git
-   ```
-
-   Or better:
-
-   * Use a **credential manager** to cache your token:
-
-     ```bash
-     git config --global credential.helper store
-     ```
-
----
-
-### 🔐 More Secure (Optional): Use SSH instead
-
-If you want, I can guide you through setting up SSH keys and using `git@github.com:...` instead. Let me know!
-
-
-
-```
 
 Let me know if you'd like a more advanced version for installing CUDA in a headless server or HPC setting.
 ```
